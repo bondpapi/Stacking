@@ -7,7 +7,8 @@ This Python program determines whether it's possible to stack a row of cubes int
 
 ## Problem Description
 
-You are given a horizontal row of n cubes, each with a specific side length. Your task is to create a new vertical pile of cubes adhering to the following rules:
+You are given a horizontal row of n cubes, each with a specific side length. 
+Your task is to create a new vertical pile of cubes adhering to the following rules:
 
 ### Stacking Rule:
 
@@ -17,34 +18,34 @@ You are given a horizontal row of n cubes, each with a specific side length. You
 
 - At each step, you can only pick the leftmost or rightmost cube from the remaining row to place on the pile.
 
-# The program should output "Yes" if it's possible to stack all cubes following these rules; otherwise, it should output "No".
+**The program should output "Yes" if it's possible to stack all cubes following these rules; otherwise, it should output "No".**
 
-## Examples
+### Examples
 
-## Input:
-2
+### Input:
+`2`
 
-5
+`5`
 
-1 2 3 8 7
+`1 2 3 8 7`
 
-5
+`5`
 
-1 2 3 7 8
+`1 2 3 7 8`
 
-## Output:
-No
+### Output:
+`No`
 
-Yes
+`Yes`
 
 ## Explanation:
-# First Test Case: 
+### First Test Case: 
 - After selecting 7 and then 1, both remaining options (2 and 8) are larger than 1, making it impossible to stack correctly.
 
-# Second Test Case:
+### Second Test Case:
 - By selecting cubes in the order 8, 7, 3, 2, 1, the stacking rules are satisfied.
 
-# Solution Approach
+### Solution Approach
 
 The problem can be efficiently solved using a two-pointer approach:
 
@@ -63,22 +64,22 @@ The problem can be efficiently solved using a two-pointer approach:
 
 This approach ensures that at each step, the best possible cube is chosen to maximize the feasibility of future placements.
 
-# Getting Started
+## Getting Started
 
-## Prerequisites
+### Prerequisites
 Python 3.x installed on your system.
 
-## Installation
+### Installation
 Clone the Repository:
 
 git clone https://github.com/bondpapi/Stacking
 
-cd stacking
+`cd stacking`
 
-## Install Dependencies:  
+### Install Dependencies:  
 This script uses only standard Python libraries, so no additional installations are required.
 
-# Usage
+## Usage
 
 1. Run the script: 
     python stacking.py
@@ -100,12 +101,12 @@ This script uses only standard Python libraries, so no additional installations 
 
 - Space Complexity: O(n) for storing the list of cube side lengths.
 
-# Constraints
+## Constraints
 - 1 <= T < 5
 - 1 < n <= 10^5
 - 1 < sideLength < 2^31
 
 # Author
-MICHAEL BOND
+**MICHAEL BOND**
 
 Email: bondpapi@yahoo.com
